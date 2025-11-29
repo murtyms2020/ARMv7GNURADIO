@@ -1,0 +1,13 @@
+prefix=/usrN
+exec_prefix=/usrN
+libdir=/usrN/lib
+includedir=/usrN/include
+LV_CXXFLAGS=
+
+
+Name: volk
+Description: VOLK: Vector Optimized Library of Kernels
+Requires:
+Version: 3.2
+Libs: -L${libdir} -lvolk
+Cflags: -I${includedir} ${LV_CXXFLAGS}

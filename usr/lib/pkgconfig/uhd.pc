@@ -1,0 +1,15 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: UHD
+Description: Ettus Research - USRP Hardware Driver
+URL: https://github.com/EttusResearch/uhd
+Version: 4.9.0.0-107-gea40e659
+Requires:
+Requires.private: 
+Conflicts:
+Cflags: -I${includedir} 
+Libs: -L${libdir} -luhd
+Libs.private: 

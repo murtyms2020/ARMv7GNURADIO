@@ -1,0 +1,11 @@
+prefix=/home/murtyms/GNUArmToolchain/gcc-arm-11.2-2022.02-x86_64-arm-none-linux-gnueabihf/arm-none-linux-gnueabihf/libc/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: FFTW
+Description: fast Fourier transform library
+Version: 3.3.10
+Libs: -L${libdir} -lfftw3f 
+Libs.private: -lm
+Cflags: -I${includedir}

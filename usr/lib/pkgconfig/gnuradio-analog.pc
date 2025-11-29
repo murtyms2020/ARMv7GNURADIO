@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnuradio-analog
+Description: GNU Radio blocks for analog communications
+Requires: gnuradio-runtime volk
+Version: 3.11.0git
+Libs: -L${libdir} -lgnuradio-analog
+Cflags: -I${includedir}

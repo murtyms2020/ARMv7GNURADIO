@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnuradio-runtime
+Description: GNU Radio core runtime infrastructure
+Requires:
+Version: 3.11.0git
+Libs: -L${libdir} -lgnuradio-runtime -lgnuradio-pmt
+Cflags: -I${includedir} -I/home/murtyms/GNUArmToolchain/gcc-arm-11.2-2022.02-x86_64-arm-none-linux-gnueabihf/arm-none-linux-gnueabihf/libc/usr/include

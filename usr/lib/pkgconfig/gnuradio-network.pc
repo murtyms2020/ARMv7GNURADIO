@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnuradio-network
+Description: GNU Radio network block library
+Requires: gnuradio-runtime
+Version: 3.11.0git
+Libs: -L${libdir} -lgnuradio-network
+Cflags: -I${includedir}
